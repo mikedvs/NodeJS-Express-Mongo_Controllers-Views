@@ -1,0 +1,11 @@
+PORT:
+Once a computer receives a packet, hot it knows what program to send it to.
+
+The program is 'listening' on that port, we assign that number that is unique.
+
+socket address ie :3000
+
+By default, most unsecure internet connections are sent to port 80.
+
+NODEJS gives us the ability to specify the port. Map to that port number.
+
