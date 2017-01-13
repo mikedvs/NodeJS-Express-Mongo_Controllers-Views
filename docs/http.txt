@@ -1,0 +1,19 @@
+HTTP:
+
+A set of rules (and a format) for data being transferred on the web.
+
+Like a business letter, date, from, to , paragraph etc.
+
+REQUEST and RESPONSE protocol.
+
+MIME TYPE, content type.
+
+A standard for specifyin the type of data being sent.
+
+Examples: application/json, text/html, image/jpeg
+
+----------------------------
+        HTTP_PARSER
+----------------------------
+
+breaks apart the information into a way that we can use it.
