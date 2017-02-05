@@ -1,0 +1,9 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: coral;
+    text-align: center;
+    padding: 2em;
+}

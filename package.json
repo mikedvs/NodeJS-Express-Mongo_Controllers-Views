@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/mikedvs/nodeAppRogueOne#readme",
   "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
     "express": "4.14.0"
   }
 }
