@@ -11,6 +11,6 @@ app.use('/dist', express.static(__dirname + '/dist'));
 app.set('view engine', 'ejs');
 
 htmlController(app);
-apiController(app, jsonParser);
+apiController(app);
 
 app.listen(port);

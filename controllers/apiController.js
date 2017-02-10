@@ -11,7 +11,7 @@ module.exports = function(app, jsonParser) {
         // delete to the database
     });
 
-    app.post('/api/person/:id', jsonParser, function(req, res){
+    app.post('/api/person/:id', function(req, res){
         // save to the database
     });
 }

@@ -1,9 +1,36 @@
+/*
+    *    Available Fonts from Google Fonts
+    * ---------------------------------------
+    * font-family: 'Josefin Sans', sans-serif;
+    * font-family: 'Playfair Display', serif;
+    * font-family: 'Crimson Text', serif;
+    * font-family: 'Abril Fatface', cursive;
+*/
+
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: coral;
+    background-color: FF414D;
     text-align: center;
     padding: 2em;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+}
+
+.lighter {
+    font-weight: lighter;
 }
