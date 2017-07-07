@@ -1,6 +1,18 @@
 var express = require('express');
 var app = express();
+var apiController = require('./controllers/apiController.js');
+var htmlController = require('./controllers/htmlController.js');
 var mongoose = require('mongoose');
+
+var port = process.env.PORT || 3000;
+
+// HTML and API Controllers
+htmlController(app);
+apiController(app);
+
+app.use('/dist', express.static(__dirname + '/dist'));
+
+app.set('view engine', 'ejs');
 
 mongoose.connect('mongodb://mikedvs:whiskey2@ds017672.mlab.com:17672/addressbook');
 
@@ -42,18 +54,6 @@ kat.save(function(err) {
     console.log('person saved!');
 });
 
-
-
-
-var apiController = require('./controllers/apiController.js');
-var htmlController = require('./controllers/htmlController.js');
-
-var port = process.env.PORT || 3000;
-
-app.use('/dist', express.static(__dirname + '/dist'));
-
-app.set('view engine', 'ejs');
-
 // Mongoose console function
 
 app.use('/', function(req, res, next) {
@@ -69,8 +69,5 @@ app.use('/', function(req, res, next) {
 
     next();
 });
-
-htmlController(app);
-apiController(app);
 
 app.listen(port);

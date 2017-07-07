@@ -13,7 +13,7 @@ module.exports = function(app) {
     });
 
     app.get('/person/:id', function(req,res) {
-        res.render('person', { ID: req.params.id, Qstr: req.query.qstr });
+        res.render('person', { ID: req.params.id, Qstr: req.query.qstr, Numtwo: req.query.numtwo});
     });
 
     app.post('/person', urlencodedParser, function(req, res){
