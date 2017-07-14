@@ -17,14 +17,21 @@ var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 
  
 var mongodbUri = 'mongodb://mikedvs:whiskey2@ds017672.mlab.com:17672/addressbook';
  
-mongoose.connect(mongodbUri, options);
+/*==============================================================
+
+    REMOVING MONOGODB CONNECTION DUE TO FIREWALL TIMEOUT
+
+================================================================*/
+
+ 
+/*mongoose.connect(mongodbUri, options);
 var conn = mongoose.connection;             
  
 conn.on('error', console.error.bind(console, 'connection error:'));  
  
 conn.once('open', function() {
   // Wait for the database connection to establish, then start the app.                         
-});
+});*/
 
 
 var port = process.env.PORT || 3000;
