@@ -10,19 +10,5 @@ angular.module('TestApp')
 	.controller('MainController', ctrlFunc);
 
 function ctrlFunc() {
-	this.message = 'Angular is loaded';
-	this.people = [
-		{
-			name: 'John Doe'
-		},
-				{
-			name: 'Jim Doe'
-		},
-				{
-			name: 'Jenny Doe'
-		},
-				{
-			name: 'Josh Doe'
-		}
-	];
+	this.people = clientPeople;
 }
